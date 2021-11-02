@@ -1,6 +1,6 @@
 ﻿---
 title: "Geopandas 설치하는 방법"
-excerpt: "md 파일에 마크다운 문법으로 작성하여 Github 원격 저장소에 업로드 해보자. 에디터는 Visual Studio code 사용! 로컬 서버에서 확인도 해보자. "
+excerpt: "안녕하세요! 이번 포스트는 Geopandas 설치시 버전 에러가 계속나서, Windows 10 및 아나콘다 파이썬 3.8 환경에서 설치하는 방법을 한 번 정리해보았습니다."
 
 categories:
   - Blog
@@ -13,10 +13,6 @@ toc_sticky: true
 date: 2021-11-02
 last_modified_at: 2021-11-02
 ---
-
-# Geopandas 설치하기
-
-안녕하세요! 이번 포스트는 Geopandas 설치시 버전 에러가 계속나서, Windows 10 및 아나콘다 파이썬 3.8 환경에서 설치하는 방법을 한 번 정리해보았습니다.
 
 ## 기본환경
 
