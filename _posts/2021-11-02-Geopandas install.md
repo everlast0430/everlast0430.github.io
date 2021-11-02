@@ -34,7 +34,7 @@ Python 버전이 3.8로 시작되기 때문에 각 whl 파일 이름에 38이 �
 
 ## 패키지 다운로드 URL
 
-만약 다운로드하려는 패키지의 버전이 없다면 한 단계 높은 버전을 받아서 설치해보길 권장한다.
+만약 다운로드하려는 패키지의 버전이 없다면 한 단계 높은 버전을 받아서 설치해보길 권장합니다.
 
 - https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely
 - https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
