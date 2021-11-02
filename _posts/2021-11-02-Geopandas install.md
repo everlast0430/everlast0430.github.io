@@ -36,7 +36,7 @@ Python 버전이 3.8로 시작되기 때문에 각 whl 파일 이름에 38이 �
 
 ## 패키지 다운로드 URL
 
-만약 다운로드하려는 패키지의 버전이 없다면 한 단계 높은 버전을 받아서 설치해보길 권장합니다.
+만약 다운로드하려는 패키지의 버전이 없다면 한 단계 높은 버전을 받아서 설치해보길 권장합니다!
 
 - [https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely](https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely)
 - [https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal](https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal)
@@ -71,4 +71,4 @@ Python 버전이 3.8로 시작되기 때문에 각 whl 파일 이름에 38이 �
 
 ![image](https://user-images.githubusercontent.com/43924464/139789332-a1fe2370-8c3d-4add-9782-0205571ad1be.png)
 
-😄
+Geopandas 설치 성공! 😄
