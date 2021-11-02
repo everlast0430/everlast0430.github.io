@@ -43,7 +43,7 @@ Python 버전이 3.8로 시작되기 때문에 각 whl 파일 이름에 38이 �
 - [https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona](https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona)
 - [https://www.lfd.uci.edu/~gohlke/pythonlibs/](https://www.lfd.uci.edu/~gohlke/pythonlibs/) (geopandas 검색)
 - [https://www.lfd.uci.edu/~gohlke/pythonlibs/#cartopy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#cartopy)
-- [https://www.lfd.uci.edu/~gohlke/pythonlibs/#rasterio](https://www.lfd.uci.edu/~gohlke/pythonlibs/#cartopy)
+- [https://www.lfd.uci.edu/~gohlke/pythonlibs/#rasterio](https://www.lfd.uci.edu/~gohlke/pythonlibs/#rasterio)
 
 ## Geopandas 관련 패키지 설치 순서
 
