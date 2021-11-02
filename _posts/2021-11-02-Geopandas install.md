@@ -14,6 +14,8 @@ date: 2021-11-02
 last_modified_at: 2021-11-02
 ---
 
+안녕하세요! 이번 포스트는 Geopandas 설치시 버전 에러가 계속나서, Windows 10 및 아나콘다 파이썬 3.8 환경에서 설치하는 방법을 한 번 정리해보았습니다.
+
 ## 기본환경
 
 - Windows 10
@@ -36,12 +38,12 @@ Python 버전이 3.8로 시작되기 때문에 각 whl 파일 이름에 38이 �
 
 만약 다운로드하려는 패키지의 버전이 없다면 한 단계 높은 버전을 받아서 설치해보길 권장합니다.
 
-- https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely
-- https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
-- https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona
-- https://www.lfd.uci.edu/~gohlke/pythonlibs/ (geopandas 검색)
-- https://www.lfd.uci.edu/~gohlke/pythonlibs/#cartopy
-- https://www.lfd.uci.edu/~gohlke/pythonlibs/#rasterio
+- [https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely](https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely)
+- [https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal](https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal)
+- [https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona](https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona)
+- [https://www.lfd.uci.edu/~gohlke/pythonlibs/](https://www.lfd.uci.edu/~gohlke/pythonlibs/) (geopandas 검색)
+- [https://www.lfd.uci.edu/~gohlke/pythonlibs/#cartopy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#cartopy)
+- [https://www.lfd.uci.edu/~gohlke/pythonlibs/#rasterio](https://www.lfd.uci.edu/~gohlke/pythonlibs/#cartopy)
 
 ## Geopandas 관련 패키지 설치 순서
 
@@ -68,3 +70,5 @@ Python 버전이 3.8로 시작되기 때문에 각 whl 파일 이름에 38이 �
 파이썬 주피터 노트북에서 해당 가상환경 커널을 이용하여 다음과 같이 입력하여 잘 설치되었는지 확인한다.
 
 ![image](https://user-images.githubusercontent.com/43924464/139789332-a1fe2370-8c3d-4add-9782-0205571ad1be.png)
+
+😄
