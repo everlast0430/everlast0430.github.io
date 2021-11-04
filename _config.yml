@@ -102,7 +102,7 @@ analytics:
 author:
   name: "임"
   avatar: "/assets/nico.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "안녕하세요!"
+  bio: "안녕하세요! 누구라도 따라할 수 있게 포스트를 작성하겠습니다!"
   location: "Sejong"
   email:
   links:
