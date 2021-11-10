@@ -151,7 +151,7 @@ driver.find_element_by_xpath(xpath).click()
 sido_xpaths = ["""//*[@id="searchAlocZoneSd"]/option[{}]""".format(i) for i in range(2, 19)]
 ```
 
-#### 4-5. 시군구 xpath경로 리스트
+#### 4-6. 시군구 xpath경로 리스트
 
 ```python
 sigungus_path = []
@@ -177,7 +177,7 @@ for sigungu in sigungus_path:
     sigungu_xpaths.append(temp)
 ```
 
-#### 4-6. 1월 일자 xpath 경로 리스트
+#### 4-7. 일자 xpath 경로 리스트
 
 ```python
 january = []
