@@ -5,7 +5,7 @@ excerpt: "안녕하세요! 이번 포스트에서는 파이썬 셀레니움을 �
 categories:
   - Blog
 tags:
-  - [Blog, jekyll, Github, Git]
+  - [selenium, python, data]
 
 toc: true
 toc_sticky: true

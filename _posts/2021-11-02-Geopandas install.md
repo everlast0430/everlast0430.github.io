@@ -5,7 +5,7 @@ excerpt: "안녕하세요! 이번 포스트는 Geopandas 설치시 버전 에러
 categories:
   - Blog
 tags:
-  - [Blog, jekyll, Github, Git]
+  - [geopandas, python]
 
 toc: true
 toc_sticky: true
