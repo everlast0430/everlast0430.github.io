@@ -14,8 +14,6 @@ date: 2021-11-10
 last_modified_at: 2021-11-10
 ---
 
-# 파이썬 셀레니움(Selenium)을 이용하여 데이터 자동 수집하기
-
 안녕하세요! 이번 포스트에서는 파이썬 셀레니움을 이용하여 교통카드 빅데이터 통합정보시스템 홈페이지에서 **일반버스·도시철도 O/D 데이터를 자동으로 수집**하려고 합니다!
 
 ## 셀레니움 소개
@@ -293,14 +291,14 @@ for month_index in range(len(january_xpaths)):
                     time.sleep(0.5)
 ```
 
-## 6. 전체 코드 및 데이터 샘플
+#### 6. 전체 코드 및 데이터 샘플
 
 소스코드 : [https://github.com/everlast0430/cityBusRailOD-python-selenium](https://github.com/everlast0430/cityBusRailOD-python-selenium)
 
 데이터 샘플 :
 ![image](https://user-images.githubusercontent.com/43924464/141049020-585190ef-52e1-4e3e-9351-d796aa5ae107.png)
 
-## 7. 주의사항
+#### 7. 주의사항
 
 브라우저 또는 서버 오류로 인하여 중간에 자주 멈추게된다...
 
@@ -318,6 +316,6 @@ for month_index in range(len(january_xpaths)):
 range(23, len(january_xpaths))
 ```
 
-## 8. 마무리
+#### 8. 마무리
 
 이상으로 파이썬 셀레니움을 활용해서 교통카드 빅데이터 통합정보시스템 홈페이지에서 일반버스·도시철도 이용 O/D 데이터를 추출해보았습니다. 혹시 문제가 있거나 간단한 방법이 있다면 피드백 부탁드립니다! 감사합니다. 😄
