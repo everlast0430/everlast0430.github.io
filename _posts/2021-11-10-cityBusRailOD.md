@@ -302,7 +302,7 @@ for month_index in range(len(january_xpaths)):
 
 ## 7. 주의사항
 
-브라우저 또는 서버 오류로 인하여 중간에 수집작업이 중단되었다면,
+브라우저 또는 서버 오류로 인하여 중간에 자주 멈추게된다...
 
 ```python
 for month_index in range(len(january_xpaths)):
@@ -310,7 +310,7 @@ for month_index in range(len(january_xpaths)):
     january_xpath = january_xpaths[month_index]
 ```
 
-month_index 부분을 수정하면 된다.
+그럴경우 month_index 부분을 수정하면 된다.
 
 만약 24일에서 뭠췄다면, 다음과같이 수정하면 될 것이다.
 
