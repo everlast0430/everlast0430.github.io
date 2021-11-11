@@ -88,7 +88,7 @@ last_modified_at: 2021-11-11
 
 ## 4. 파이썬 셀레니움 코드 (1) - 일자/시도/시군구 경로 만들기
 
-#### 4-1. 필요한 라이브러리들을 import
+## 4-1. 필요한 라이브러리들을 import
 
 ```python
 from selenium import webdriver
@@ -109,7 +109,7 @@ webdriver는 "chromedriver.exe"를 실행시키기 위해서 필요하다. 나�
 마지막으로 **WebDriverWait**를 통해서 기다린 결과를 이용해 최종적인 다운로드 버튼을 클릭할 수 있게 연결해주는
 **element_to_be_clickable**와 **By**가 필요해보인다.
 
-#### 4-2. 홈페이지 접속
+## 4-2. 홈페이지 접속
 
 ```python
 start = time.time()
@@ -121,7 +121,7 @@ url = 'https://www.stcis.go.kr/gov/loginUser.do'
 driver.get(url)
 ```
 
-#### 4-3. 지표선택
+## 4-3. 지표선택
 
 메인화면에서 해당 지표를 선택하면 된다.
 
@@ -131,7 +131,7 @@ xpath = """/html/body/div[2]/div/div[2]/div[1]/ul/li[9]/a/div[1]/img"""
 driver.find_element_by_xpath(xpath).click()
 ```
 
-#### 4-4. 달력 초기화 (일자 경로 얻기 위함)
+## 4-4. 달력 초기화 (일자 경로 얻기 위함)
 
 달력은 1월 1일로 만들어줘야 1월달에 대한 **일자 경로**들을 쭉 뽑을 수 있기 때문에 초기화 해줬다.
 
@@ -145,13 +145,13 @@ xpath = "/html/body/div[8]/table/tbody/tr[1]/td[6]/a"
 driver.find_element_by_xpath(xpath).click()
 ```
 
-#### 4-5. 시도 xpath 경로 리스트
+## 4-5. 시도 xpath 경로 리스트
 
 ```python
 sido_xpaths = ["""//*[@id="searchAlocZoneSd"]/option[{}]""".format(i) for i in range(2, 19)]
 ```
 
-#### 4-6. 시군구 xpath경로 리스트
+## 4-6. 시군구 xpath경로 리스트
 
 ```python
 sigungus_path = []
@@ -177,7 +177,7 @@ for sigungu in sigungus_path:
     sigungu_xpaths.append(temp)
 ```
 
-#### 4-7. 일자 xpath 경로 리스트
+## 4-7. 일자 xpath 경로 리스트
 
 ```python
 january = []
@@ -205,7 +205,7 @@ january_xpaths
 
 만들어진 각각의 경로들을 가지고 데이터 추출 작업을 시작하려고 한다.
 
-#### 5-1. 홈페이지 접속 및 기본설정
+## 5-1. 홈페이지 접속 및 기본설정
 
 먼저 다시 사이트로 접속하여 해당 지표를 클릭하고 공간선택 중에 계속 고정이되는 부분을 기본으로 선택한다.
 
@@ -232,7 +232,7 @@ xpath = "/html/body/div[2]/form/div[1]/div[2]/div[2]/div/div[4]/div/div[2]/div/u
 driver.find_element_by_xpath(xpath).click()
 ```
 
-#### 5-2. 데이터 추출 작업
+## 5-2. 데이터 추출 작업
 
 만들었던 경로 리스트를 이용하여 일자별 시도별 시군구별 for문을 이용해 데이터 추출 작업을 수행한다.
 
