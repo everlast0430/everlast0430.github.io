@@ -19,7 +19,7 @@ locale: "ko-KR"
 title: "Step By Step "
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
-name: ""
+name: "72SOBA"
 description: "공부 & 정리 블로그"
 url: "https://everlast0430.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
