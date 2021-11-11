@@ -108,10 +108,10 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto: sabrikong@@gmail.com"
+      url: "mailto: sabrikong@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/evelast0430"
+      url: "https://github.com/everlast0430"
 
 # Site Footer
 footer:
