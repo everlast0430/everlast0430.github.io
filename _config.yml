@@ -15,12 +15,12 @@
 minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: "en-US"
-title: "Step By Step"
+locale: "ko-KR"
+title: "Step By Step "
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
-name: "Your Name"
-description: "An amazing website."
+name: ""
+description: "공부 & 정리 블로그"
 url: "https://everlast0430.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "everlast0430/everlast0430.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -100,30 +100,18 @@ analytics:
 
 # Site Author
 author:
-  name: "Soba"
+  name: "72SOBA"
   avatar: "/assets/nico.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "안녕하세요!"
-  location: "Sejong"
+  location: "Sejong, South Korea"
   email:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "mailto: sabrikong@@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/evelast0430"
 
 # Site Footer
 footer:
