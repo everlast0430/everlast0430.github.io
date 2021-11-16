@@ -10,8 +10,8 @@ tags:
 toc: true
 toc_sticky: true
 
-date: 2021-11-15
-last_modified_at: 2021-11-15
+date: 2021-11-16
+last_modified_at: 2021-11-16
 ---
 
 안녕하세요! 이번 포스트는 셀레니움으로 다운받은 데이터를 ([파이썬 셀레니움(Selenium)을 이용하여 데이터 자동 수집](https://github.com/everlast0430/cityBusRailOD-python-selenium/blob/main/202101.csv)) 전처리해보려고 합니다!
