@@ -37,6 +37,18 @@ last_modified_at: 2021-11-15
 
 나는 시군구로 작업을 할 예정이라서 시군구의 최신 업데이트 파일을 받았다.
 
+## 라이브러리 import
+
+```python
+import fiona
+import pandas as pd
+import geopandas as gpd
+import time
+
+import warnings
+warnings.filterwarnings('ignore')
+```
+
 ## 좌표계 설정 방법
 
 먼저, 일반적으로 shp파일을 불러오면 다음과 같다.
