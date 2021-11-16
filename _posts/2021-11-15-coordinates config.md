@@ -21,7 +21,7 @@ last_modified_at: 2021-11-15
 - Geopandas 설치
 - Jupyter Lab (설정에서는 필수사항은 아니지만 kepler.gl을 쓰려면 미리 써두는게 편하다.)
 
-## Kepler.gl 에서 지원하는 좌표계
+## 1. Kepler.gl 에서 지원하는 좌표계
 
 먼저 좌표계를 변환하기 전에,Kepler.gl 홈페이지에서 지원되는 좌표 시스템을 알아보니 WGS84 경위도로 표시되어야 한다고 나와있다.
 
@@ -31,13 +31,13 @@ last_modified_at: 2021-11-15
 
      WGS84(EPSG:4326): GPS가 사용하는 좌표계(경도와 위도)
 
-## 좌표계 설정파일 다운로드
+## 2. 좌표계 설정파일 다운로드
 
 다운로드 주소 : [http://www.gisdeveloper.co.kr/?p=2332](http://www.gisdeveloper.co.kr/?p=2332)
 
 나는 시군구로 작업을 할 예정이라서 시군구의 최신 업데이트 파일을 받았다.
 
-## 라이브러리 import
+## 3. 라이브러리 import
 
 ```python
 import fiona
@@ -49,7 +49,7 @@ import warnings
 warnings.filterwarnings('ignore')
 ```
 
-## 좌표계 설정 방법
+## 4. 좌표계 설정 방법
 
 먼저, 일반적으로 shp파일을 불러오면 다음과 같다.
 
