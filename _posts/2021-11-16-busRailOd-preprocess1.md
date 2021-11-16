@@ -157,15 +157,17 @@ kepler.gl 에서는 다음과같은 형식의 날짜 데이터를 인식한다.
 
 ![image](https://user-images.githubusercontent.com/43924464/141870912-7dc88d33-fa8c-4a1d-908d-a49a01467b85.png)
 
-형식을 바꿔주자!
+나는 timestamp로 interactive하게 움직여주고 싶어서 다음과 같이 형식을 바꿔주었다!
 
 ```python
 # 날짜 데이터 형식 수정
 
 final_df['일자'] = final_df['일자'].str.slice(start=0, stop=-3)
+final_df['일자'] = pd.to_datetime(final_df['일자'])
+final_df['일자'] = final_df['일자'].dt.strftime("%Y-%m-%d %ss")
 final_df.head()
 ```
 
 최종 데이터 테이블 ⬇️
 
-![image](https://user-images.githubusercontent.com/43924464/141929046-7f506ac1-0ada-4152-87c4-e902f51e5e71.png)
+![image](https://user-images.githubusercontent.com/43924464/141938779-226470e4-b15f-4d33-9aa8-f8ac17e7e39a.png)
