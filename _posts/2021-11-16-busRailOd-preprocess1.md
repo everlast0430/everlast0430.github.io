@@ -94,7 +94,17 @@ shp 파일의 각 구별 중심점 생성 ⬇️
 
 ![image](https://user-images.githubusercontent.com/43924464/141880410-ae7028ac-3605-49a0-8d05-17bce673adad.png)
 
-### 2.2. 서울인 곳만 추출
+### 2.2. 중심점의 위경도 구하기
+
+```python
+polycode_df['centroid_long'] = polycode_df['geometry'].centroid.x # 경도
+polycode_df['centroid_lat'] = polycode_df['geometry'].centroid.y # 위도
+polycode_df.head()
+```
+
+![image](https://user-images.githubusercontent.com/43924464/141929189-db9874ed-cf21-41db-b757-438e1308f100.png)
+
+### 2.3. 서울인 곳만 추출
 
 그리고나서 '시도코드'의 앞 두자리가 11인 곳만 추출하면 된다.
 
@@ -106,9 +116,9 @@ polycode_seoul_df.head()
 
 shp 파일의 서울만 ⬇️
 
-![image](https://user-images.githubusercontent.com/43924464/141880114-d700a35c-effe-453b-859e-d54832a3af84.png)
+![image](https://user-images.githubusercontent.com/43924464/141929127-b74170e0-54ae-4b73-a83c-965a918dc446.png)
 
-### Unique 값 확인
+### 2.4. Unique 값 확인
 
 두 테이블을 매칭하기전 unique 값을 확인하려 한다. 원래 첫 OD테이블에 시군구코드가 있다면 이런 과정이 필요없었을 것이다.
 
@@ -131,14 +141,15 @@ print(len(set(sig_seoul_df['시군구(도착)'].unique().tolist())
 ### 3.1. 두 테이블 합치기
 
 ```python
-final_df = pd.merge(sig_seoul_df ,polycode_seoul_df[['SIG_KOR_NM', 'centroid']], left_on='시군구(출발)', right_on='SIG_KOR_NM', how='left')
-final_df = pd.merge(final_df ,polycode_seoul_df[['SIG_KOR_NM', 'centroid']], left_on='시군구(도착)', right_on='SIG_KOR_NM', how='left')
+final_df = pd.merge(sig_seoul_df ,polycode_seoul_df[['SIG_KOR_NM', 'centroid_long', 'centroid_lat']], left_on='시군구(출발)', right_on='SIG_KOR_NM', how='left')
+final_df = pd.merge(final_df ,polycode_seoul_df[['SIG_KOR_NM', 'centroid_long', 'centroid_lat']], left_on='시군구(도착)', right_on='SIG_KOR_NM', how='left')
 final_df = final_df.drop(columns=['SIG_KOR_NM_x', 'SIG_KOR_NM_y'])
+final_df.head()
 ```
 
 합친 결과 ⬇️
 
-![image](https://user-images.githubusercontent.com/43924464/141881281-1ed21777-0833-4307-ab58-97cec1016ec4.png)
+![image](https://user-images.githubusercontent.com/43924464/141928869-72312e49-9117-48b1-99ac-f551d1aa92a4.png)
 
 ### 3.2. 일자 수정
 
@@ -157,4 +168,4 @@ final_df.head()
 
 최종 데이터 테이블 ⬇️
 
-![image](https://user-images.githubusercontent.com/43924464/141881330-e5f5bddc-3021-40ac-80a0-8d8bc7589ce5.png)
+![image](https://user-images.githubusercontent.com/43924464/141929046-7f506ac1-0ada-4152-87c4-e902f51e5e71.png)
