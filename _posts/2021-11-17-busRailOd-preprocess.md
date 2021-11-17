@@ -141,6 +141,8 @@ final_df.head()
 
 로컬파일을 이용하는 경우에 250MB를 초과할 수 없다. 그래서 일주일치만 저장하였다.
 
+![image](https://user-images.githubusercontent.com/43924464/142123039-781b034d-e5ec-4cc9-856f-c1261249e921.png)
+
 ```python
 final_df[:119].to_csv('202101_sido_final.csv', encoding='utf-8', index=False)
 ```
