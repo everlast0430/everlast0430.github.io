@@ -1,5 +1,5 @@
 ﻿---
-title: "좌표계 설정 - Kepler.gl, Python (2021.11.15)"
+title: "좌표계 설정 - Kepler.gl, Python"
 excerpt: "안녕하세요!  이번 포스트는 Kepler.gl에서 쓰이는 좌표계를 파이썬으로 설정하는 방법을 설명하려고 합니다."
 
 categories:
