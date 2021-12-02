@@ -1,7 +1,7 @@
 ---
-title: "keplergl"
+title: "python"
 layout: archive
-permalink: categories/keplergl
+permalink: categories/python
 author_profile: true
 sidebar_main: true
 ---
