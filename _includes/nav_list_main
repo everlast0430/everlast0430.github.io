@@ -26,7 +26,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "crawilngSelenium" %}
-                        <li><a href="/categories/crawlingSelenium" class="">크롤링/셀레니움({{category[1].size}})</a></li>
+                        <li><a href="/categories/crawilngSelenium" class="">크롤링/셀레니움({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
