@@ -3,7 +3,7 @@ title: "일반버스·도시철도 O/D 데이터 활용 - 전처리부터 kepler
 excerpt: "안녕하세요!  이번 포스트는 셀레니움으로 다운받은 데이터를 전처리하고 시각화해 보려고 합니다!"
 
 categories:
-  - python
+  - keplergl
 tags:
   - [kepler.gl, python, visualization]
 

@@ -33,8 +33,8 @@
         <span class="nav__sub-title">SQL</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/SQLCOTE" class="">SQL 코테 ({{category[1].size}})</a></li>
+                    {% if category[0] == "sqlcote" %}
+                        <li><a href="/categories/sqlcote" class="">SQL 코테 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -42,8 +42,8 @@
         <span class="nav__sub-title">KeplerGL</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/keplergl" class="">시각화({{category[1].size}})</a></li>
+                    {% if category[0] == "keplergl" %}
+                        <li><a href="/categories/keplergl" class="">keplergl 시각화({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>    
