@@ -14,15 +14,13 @@ date: 2021-12-02
 last_modified_at: 2021-12-02
 ---
 
-# 모든 레코드 조회하기
+#### 사이트명 : 프로그래머스(Programmers)
 
-    사이트명 : 프로그래머스(Programmers)
+#### 문제 주소 : [https://programmers.co.kr/learn/courses/30/lessons/59034](https://programmers.co.kr/learn/courses/30/lessons/59034)
 
-    사이트 주소 : [https://programmers.co.kr/learn/courses/30/lessons/59034](https://programmers.co.kr/learn/courses/30/lessons/59034)
+#### 문제명 : 모든 레코드 조회하기
 
-    문제명 : 모든 레코드 조회하기
-
-    SQL : MySQL
+#### SQL : MySQL
 
 ```sql
 SELECT *
