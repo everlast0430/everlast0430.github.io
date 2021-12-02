@@ -3,7 +3,7 @@ title: "파이썬 셀레니움(Selenium)을 이용하여 데이터 자동 수집
 excerpt: "안녕하세요! 이번 포스트에서는 파이썬 셀레니움을 이용하여 교통카드 빅데이터 통합정보시스템 홈페이지에서 **일반버스·도시철도 O/D 데이터를 자동으로 수집**하려고 합니다!"
 
 categories:
-  - Blog
+  - crawilngSelenium
 tags:
   - [selenium, python, data]
 
