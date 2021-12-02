@@ -30,6 +30,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            
         <span class="nav__sub-title">SQL</span>
             <ul>
                 {% for category in site.categories %}
