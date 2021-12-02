@@ -1,7 +1,7 @@
 ---
-title: "SQL"
+title: "keplergl"
 layout: archive
-permalink: categories/sql
+permalink: categories/keplergl
 author_profile: true
 sidebar_main: true
 ---

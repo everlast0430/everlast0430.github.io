@@ -3,7 +3,7 @@ title: "Geopandas 설치하는 방법 (2021.11.02)"
 excerpt: "안녕하세요! 이번 포스트는 Geopandas 설치시 버전 에러가 계속나서, Windows 10 및 아나콘다 파이썬 3.8 환경에서 설치하는 방법을 한 번 정리해보았습니다."
 
 categories:
-  - Blog
+  - keplergl
 tags:
   - [geopandas, python]
 
