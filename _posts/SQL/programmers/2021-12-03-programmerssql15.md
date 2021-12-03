@@ -23,18 +23,37 @@ last_modified_at: 2021-12-02
 SQL : MySQL
 
 ```sql
-SELECT HOUR(DATETIME) AS HOUR, COUNT(*)
-FROM ANIMAL_OUTS
-WHERE HOUR(DATETIME) BETWEEN '9' AND '19'
+WITH RECURSIVE TEMP AS (
+	SELECT 0 AS HOUR
+	UNION ALL
+	SELECT HOUR+1 FROM TEMP WHERE HOUR<23)
+
+SELECT HOUR, COUNT(A.ANIMAL_ID)
+FROM TEMP AS T
+  LEFT JOIN ANIMAL_OUTS AS A
+  ON T.HOUR = HOUR(A.DATETIME)
 GROUP BY HOUR
-ORDER BY HOUR ASC
+ORDER BY HOUR
 
 ```
 
-문제를 읽어보면 09:00부터 19:59까지 시간대별 입양 건수를 뽑아야한다
+먼저 WITH RECURSIVE 문에 대한 이해가 필요하다.
 
-먼저 HOUR라는 함수를 이용해 DATETIME 컬럼을 시간대별로 출력할 수 있다. 이를 이용해 WHERE절에 BETWEEN을 써서 09:00~19:59 범위를 잡아주고
+1. 메모리 상에 가상의 테이블을 저장한다
+2. 재귀 쿼리를 이용하여 실제로 테이블을 생성하거나 데이터삽입(INSERT)을 하지 않아도 가상 테이블을 생성할 수 있다.
 
-GROUP BY를 이용해 시간대별 카운트 개수를 출력하면 된다
+```sql
+WITH RECURSIVE 테이블명 AS(
+  SELECT 초기값 AS 컬럼별명1
+  UNION ALL
+  SELECT 컬럼별명1 계산식 FROM 테이블명 WHERE 제어문
+)
+```
 
-![image](https://user-images.githubusercontent.com/43924464/144375916-4ea3cb1a-bcf5-4cb6-b90e-c800dca9fed9.png)
+RECURSIVE 문을 통해 0~23시까지의 테이블을 만들어주고
+
+기존테이블과 LEFT 조인을 통해서 합쳐준 후,
+
+GROUP BY 및 COUNT를 사용해주면 된다!
+
+![image](https://user-images.githubusercontent.com/43924464/144526955-60b620d2-0d7b-47f5-9fcb-9fded9f77ea2.png)
