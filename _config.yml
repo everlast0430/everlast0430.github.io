@@ -100,7 +100,7 @@ analytics:
 
 # Site Author
 author:
-  name: "72SOBA"
+  name: ""
   avatar: "/assets/nico.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "안녕하세요!"
   location: "Sejong, South Korea"
