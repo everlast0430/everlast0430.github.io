@@ -40,6 +40,15 @@
                 {% endfor %}
             </ul>
 
+        <span class="nav__sub-title">Data Analytics</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "keplergl" %}
+                        <li><a href="/categories/analytics" class="">Data Analytics({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>    
+
         <span class="nav__sub-title">KeplerGL</span>
             <ul>
                 {% for category in site.categories %}
